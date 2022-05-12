@@ -4,7 +4,7 @@
   import { XOutline } from 'svelte-heros';
 
   export let color: 'blue' | 'red' | 'green' | 'yellow' | 'gray' = 'blue';
-  export let icon: SvelteComponent | null = null;
+  export let icon: SvelteComponent | undefined;
   export let rounded: boolean = true;
   export let withBorderAccent: boolean = false;
   export let onDismiss: boolean | (() => void) = false;
