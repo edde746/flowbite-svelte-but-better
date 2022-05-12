@@ -1,3 +1,5 @@
+/* Card */
+export { default as Card } from './Card/Card.svelte';
 /* Alert */
 export { default as Alert } from './Alert/Alert.svelte';
 /* Button */
