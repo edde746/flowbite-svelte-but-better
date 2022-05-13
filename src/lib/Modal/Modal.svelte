@@ -1,7 +1,6 @@
 <script lang="ts">
   import classNames from 'classnames';
-  import { createEventDispatcher } from 'svelte';
-  import { context } from './ModalStore';
+  import { createEventDispatcher, setContext } from 'svelte';
   const dispatch = createEventDispatcher();
 
   export let open = false;
@@ -11,14 +10,14 @@
   export let placement: `${'top' | 'bottom'}-${'left' | 'center' | 'right'}` | `center${'' | '-left' | '-right'}` =
     'center';
 
-  $: open &&
-    context.set({
-      onClose: () => {
-        open = false;
-        dispatch('close');
-      },
-      popup,
-    });
+  // Issue if popup is changed after initialisation
+  setContext('modal', {
+    onClose: () => {
+      open = false;
+      dispatch('close');
+    },
+    popup,
+  });
 
   const sizeClasses = {
     sm: 'max-w-sm',

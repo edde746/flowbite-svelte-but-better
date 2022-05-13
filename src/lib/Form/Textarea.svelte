@@ -1,6 +1,7 @@
 <script lang="ts">
   import classNames from 'classnames';
 
+  export let value: string = '';
   export let shadow: boolean = false;
   export let helperText: string = '';
   export let color: 'base' | 'green' | 'red' = 'base';
@@ -26,6 +27,7 @@
 
 <textarea
   {...$$props}
+  bind:value
   class={classNames(
     'block w-full rounded-lg border disabled:cursor-not-allowed disabled:opacity-50',
     colorClasses[color].input,

@@ -2,6 +2,7 @@
   import classNames from 'classnames';
   import type { SvelteComponent } from 'svelte';
 
+  export let value: string = '';
   export let sizing: 'sm' | 'md' | 'lg' = 'md';
   export let shadow: boolean = false;
   export let helperText: string = '';
@@ -43,6 +44,7 @@
     {/if}
     <input
       {...$$props}
+      bind:value
       class={classNames(
         'block w-full border disabled:cursor-not-allowed disabled:opacity-50',
         colorClasses[color].input,
