@@ -56,6 +56,7 @@
   let tooltipRef: HTMLElement, triggerRef: HTMLElement, arrowRef: HTMLElement;
   $: browser &&
     tooltipRef &&
+    open &&
     computePosition(triggerRef, tooltipRef, {
       middleware: floatingMiddleware({ arrowRef, placement }),
       placement: floatingPlacement({ placement }),
