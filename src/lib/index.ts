@@ -1,3 +1,6 @@
+/* ListGroup */
+export { default as ListGroupItem } from './ListGroup/ListGroupItem.svelte';
+export { default as ListGroup } from './ListGroup/ListGroup.svelte';
 /* Dropdown */
 export { default as DropdownDivider } from './Dropdown/DropdownDivider.svelte';
 export { default as DropdownHeader } from './Dropdown/DropdownHeader.svelte';
