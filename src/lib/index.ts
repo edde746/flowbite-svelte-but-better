@@ -37,5 +37,10 @@ export { default as AvatarGroupCounter } from './Avatar/AvatarGroupCounter.svelt
 /* Breadcrumb */
 export { default as BreadcrumbItem } from './Breadcrumb/BreadcrumbItem.svelte';
 export { default as Breadcrumb } from './Breadcrumb/Breadcrumb.svelte';
+/* Modal */
+export { default as Modal } from './Modal/Modal.svelte';
+export { default as ModalFooter } from './Modal/ModalFooter.svelte';
+export { default as ModalBody } from './Modal/ModalBody.svelte';
+export { default as ModalHeader } from './Modal/ModalHeader.svelte';
 /* Badge */
 export { default as Badge } from './Badge/Badge.svelte';

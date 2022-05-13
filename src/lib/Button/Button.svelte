@@ -84,6 +84,7 @@
 </script>
 
 <button
+  on:click
   data-testid="button-element"
   type="button"
   {...$$props}
