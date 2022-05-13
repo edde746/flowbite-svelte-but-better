@@ -47,6 +47,9 @@ export { default as Card } from './Card/Card.svelte';
 export { default as Progress } from './Progress/Progress.svelte';
 /* Alert */
 export { default as Alert } from './Alert/Alert.svelte';
+/* Toast */
+export { default as ToastToggle } from './Toast/ToastToggle.svelte';
+export { default as Toast } from './Toast/Toast.svelte';
 /* Spinner */
 export { default as Spinner } from './Spinner/Spinner.svelte';
 /* Button */
