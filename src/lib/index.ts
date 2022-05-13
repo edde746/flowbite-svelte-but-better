@@ -12,6 +12,8 @@ export { default as NavbarBrand } from './Navbar/NavbarBrand.svelte';
 export { default as NavbarLink } from './Navbar/NavbarLink.svelte';
 export { default as Navbar } from './Navbar/Navbar.svelte';
 export { default as NavbarToggle } from './Navbar/NavbarToggle.svelte';
+/* Pagination */
+export { default as Pagination } from './Pagination/Pagination.svelte';
 /* Footer */
 export { default as FooterCopyright } from './Footer/FooterCopyright.svelte';
 export { default as FooterLink } from './Footer/FooterLink.svelte';
