@@ -51,6 +51,13 @@ export { default as Alert } from './Alert/Alert.svelte';
 export { default as Spinner } from './Spinner/Spinner.svelte';
 /* Button */
 export { default as Button } from './Button/Button.svelte';
+/* Table */
+export { default as TableHead } from './Table/TableHead.svelte';
+export { default as TableBody } from './Table/TableBody.svelte';
+export { default as TableCell } from './Table/TableCell.svelte';
+export { default as TableHeadCell } from './Table/TableHeadCell.svelte';
+export { default as TableRow } from './Table/TableRow.svelte';
+export { default as Table } from './Table/Table.svelte';
 /* Avatar */
 export { default as Avatar } from './Avatar/Avatar.svelte';
 export { default as AvatarGroup } from './Avatar/AvatarGroup.svelte';
