@@ -41,6 +41,10 @@ export { default as TextInput } from './Form/TextInput.svelte';
 export { default as Radio } from './Form/Radio.svelte';
 /* Tooltip */
 export { default as Tooltip } from './Tooltip/Tooltip.svelte';
+/* Rating */
+export { default as Rating } from './Rating/Rating.svelte';
+export { default as RatingStar } from './Rating/RatingStar.svelte';
+export { default as RatingAdvanced } from './Rating/RatingAdvanced.svelte';
 /* Card */
 export { default as Card } from './Card/Card.svelte';
 /* Progress */
