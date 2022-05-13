@@ -34,9 +34,9 @@
 
 <span
   class={classNames('flex h-fit items-center gap-1 font-semibold', colorClasses[color], sizeClasses[size], {
-    'rounded px-2 py-0.5': !!$$slots,
-    'rounded-full p-1': !$$slots && size === 'xs',
-    'rounded-full p-1.5': !$$slots && size === 'sm',
+    'rounded px-2 py-0.5': !!$$slots.default,
+    'rounded-full p-1': !$$slots.default && size === 'xs',
+    'rounded-full p-1.5': !$$slots.default && size === 'sm',
   })}
 >
   {#if icon}

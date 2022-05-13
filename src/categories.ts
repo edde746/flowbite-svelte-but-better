@@ -61,8 +61,8 @@ export default [
   },
   {
     title: 'Badges',
+    href: '/badges',
     icon: HiBadgeCheckSolid,
-    group: false,
     card: {
       className: 'w-28',
       images: { light: 'badges-light.svg', dark: 'badges-dark.svg' },

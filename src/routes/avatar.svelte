@@ -10,7 +10,6 @@
   } from '$lib';
 
   import Card from '$lib/Card/Card.svelte';
-  import { HiInformationCircleSolid, HiEyeSolid } from 'svelte-icons/hi';
   import { HighlightSvelte } from 'svelte-highlight';
 </script>
 
