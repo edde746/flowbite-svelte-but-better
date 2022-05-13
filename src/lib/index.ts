@@ -6,6 +6,12 @@ export { default as DropdownDivider } from './Dropdown/DropdownDivider.svelte';
 export { default as DropdownHeader } from './Dropdown/DropdownHeader.svelte';
 export { default as Dropdown } from './Dropdown/Dropdown.svelte';
 export { default as DropdownItem } from './Dropdown/DropdownItem.svelte';
+/* Navbar */
+export { default as NavbarCollapse } from './Navbar/NavbarCollapse.svelte';
+export { default as NavbarBrand } from './Navbar/NavbarBrand.svelte';
+export { default as NavbarLink } from './Navbar/NavbarLink.svelte';
+export { default as Navbar } from './Navbar/Navbar.svelte';
+export { default as NavbarToggle } from './Navbar/NavbarToggle.svelte';
 /* Footer */
 export { default as FooterCopyright } from './Footer/FooterCopyright.svelte';
 export { default as FooterLink } from './Footer/FooterLink.svelte';
