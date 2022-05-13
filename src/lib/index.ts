@@ -10,6 +10,15 @@ export { default as FooterIcon } from './Footer/FooterIcon.svelte';
 export { default as Footer } from './Footer/Footer.svelte';
 export { default as FooterLinkGroup } from './Footer/FooterLinkGroup.svelte';
 export { default as FooterBrand } from './Footer/FooterBrand.svelte';
+/* Form */
+export { default as ToggleSwitch } from './Form/ToggleSwitch.svelte';
+export { default as Textarea } from './Form/Textarea.svelte';
+export { default as FileInput } from './Form/FileInput.svelte';
+export { default as Select } from './Form/Select.svelte';
+export { default as Checkbox } from './Form/Checkbox.svelte';
+export { default as Label } from './Form/Label.svelte';
+export { default as TextInput } from './Form/TextInput.svelte';
+export { default as Radio } from './Form/Radio.svelte';
 /* Tooltip */
 export { default as Tooltip } from './Tooltip/Tooltip.svelte';
 /* Card */

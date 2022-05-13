@@ -85,6 +85,8 @@
 
 <button
   data-testid="button-element"
+  type="button"
+  {...$$props}
   class={classNames(
     'group flex h-min w-fit items-center justify-center p-0.5 text-center font-medium focus:z-10',
     pill ? 'rounded-full' : 'rounded-lg',
@@ -101,8 +103,6 @@
     },
     $$props.class
   )}
-  type="button"
-  {...$$props}
 >
   <span
     class={classNames('flex items-center', sizeClasses[size], outline && pill ? 'rounded-full' : 'rounded-md', {
