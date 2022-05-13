@@ -51,6 +51,9 @@ export { default as Card } from './Card/Card.svelte';
 export { default as Progress } from './Progress/Progress.svelte';
 /* Alert */
 export { default as Alert } from './Alert/Alert.svelte';
+/* Accordion */
+export { default as AccordionItem } from './Accordion/AccordionItem.svelte';
+export { default as Accordion } from './Accordion/Accordion.svelte';
 /* Toast */
 export { default as ToastToggle } from './Toast/ToastToggle.svelte';
 export { default as Toast } from './Toast/Toast.svelte';
