@@ -40,7 +40,7 @@
     <button class="flex items-center">
       <slot name="label">{label}</slot>
       {#if arrowIcon}
-        <svelte:component this={icon ?? ChevronDownOutline} class="ml-2 h-4 w-4" />
+        <svelte:component this={icon ?? HiChevronDownOutline} class="ml-2 h-4 w-4" />
       {/if}
     </button>
   {:else}
@@ -55,7 +55,7 @@
     >
       <slot name="label">{label}</slot>
       {#if arrowIcon}
-        <svelte:component this={icon ?? ChevronDownOutline} class="ml-2 h-4 w-4" />
+        <svelte:component this={icon ?? HiChevronDownOutline} class="ml-2 h-4 w-4" />
       {/if}
     </Button>
   {/if}
