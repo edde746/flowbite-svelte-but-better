@@ -2,7 +2,7 @@
   import { ChevronRightOutline } from 'svelte-heros';
   import type { SvelteComponent } from 'svelte';
 
-  export let icon: SvelteComponent | undefined;
+  export let icon: typeof SvelteComponent | null = null;
 </script>
 
 <li class="group flex items-center" {...$$props}>

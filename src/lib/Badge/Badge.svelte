@@ -4,7 +4,7 @@
 
   export let color: 'blue' | 'red' | 'green' | 'yellow' | 'gray' | 'indigo' | 'purple' | 'pink' = 'blue';
   export let size: 'xs' | 'sm' = 'xs';
-  export let icon: SvelteComponent | undefined;
+  export let icon: typeof SvelteComponent | null = null;
 
   const colorClasses = {
     blue: 'bg-blue-100 text-blue-800 dark:bg-blue-200 dark:text-blue-800 group-hover:bg-blue-200 dark:group-hover:bg-blue-300',

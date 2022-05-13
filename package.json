@@ -24,6 +24,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@floating-ui/dom": "^0.5.0",
     "classnames": "^2.3.1",
     "svelte-heros": "^2.0.0"
   }

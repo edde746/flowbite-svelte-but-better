@@ -1,3 +1,5 @@
+/* Tooltip */
+export { default as Tooltip } from './Tooltip/Tooltip.svelte';
 /* Card */
 export { default as Card } from './Card/Card.svelte';
 /* Alert */

@@ -2,13 +2,13 @@
   import type { SvelteComponent } from 'svelte';
   import classNames from 'classnames';
 
-  export let label: string | undefined;
+  export let label: string = '';
   export let pill: boolean = false;
   export let outline: boolean = false;
   export let color: 'blue' | 'alternative' | 'dark' | 'light' | 'green' | 'red' | 'yellow' | 'purple' = 'blue';
   export let size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' = 'md';
-  export let icon: SvelteComponent | undefined;
-  export let gradientMonochrome: 'blue' | 'green' | 'cyan' | 'teal' | 'lime' | 'red' | 'pink' | 'purple' | undefined;
+  export let icon: typeof SvelteComponent | undefined = undefined;
+  export let gradientMonochrome: 'blue' | 'green' | 'cyan' | 'teal' | 'lime' | 'red' | 'pink' | 'purple' | null = null;
   export let gradientDuoTone:
     | 'purpleToBlue'
     | 'cyanToBlue'
@@ -17,8 +17,8 @@
     | 'pinkToOrange'
     | 'tealToLime'
     | 'redToYellow'
-    | undefined;
-  export let positionInGroup: 'start' | 'middle' | 'end' | undefined;
+    | null = null;
+  export let positionInGroup: 'start' | 'middle' | 'end' | null = null;
 
   const colorClasses = {
     blue: 'text-white bg-blue-700 border border-transparent hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 disabled:hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 dark:disabled:hover:bg-blue-600',
