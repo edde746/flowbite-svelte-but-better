@@ -1,6 +1,7 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { getContext } from 'svelte';
+  import type { Writable } from 'svelte/store';
 
   export let color: 'blue' | 'alternative' | 'dark' | 'light' | 'green' | 'red' | 'yellow' | 'purple' = 'blue';
 
@@ -14,9 +15,11 @@
     yellow: 'bg-yellow-50 dark:bg-yellow-900',
     purple: 'bg-purple-50 dark:bg-purple-900',
   };
+
+  const collapsed = getContext<Writable<boolean>>('collapsed');
 </script>
 
-{#if getContext('collapsed') === false}
+{#if $collapsed === false}
   <div
     {...$$props}
     class={classNames('mt-6 rounded-lg p-4', colorClasses[color], $$props.class)}

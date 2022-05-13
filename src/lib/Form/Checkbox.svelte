@@ -1,5 +1,7 @@
 <script lang="ts">
   import classNames from 'classnames';
+
+  export let checked: boolean = false;
 </script>
 
 <input
@@ -9,4 +11,5 @@
     $$props.class
   )}
   type="checkbox"
+  bind:checked
 />

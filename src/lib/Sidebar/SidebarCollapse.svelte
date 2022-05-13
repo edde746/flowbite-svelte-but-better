@@ -2,6 +2,7 @@
   import classNames from 'classnames';
   import { getContext, setContext, type SvelteComponent } from 'svelte';
   import { ChevronDownOutline, MenuOutline } from 'svelte-heros';
+  import type { Writable } from 'svelte/store';
   import SidebarItemWrapper from './SidebarItemWrapper.svelte';
 
   export let open: boolean = false;
@@ -9,6 +10,7 @@
   export let label: string = '';
 
   setContext('insideCollapse', true);
+  const collapsed = getContext<Writable<boolean>>('collapsed');
 </script>
 
 <SidebarItemWrapper>
@@ -31,7 +33,7 @@
         )}
       />
     {/if}
-    {#if getContext('collapsed') === true}
+    {#if $collapsed === true}
       <span class="sr-only">{label}</span>
     {:else}
       <span class="ml-3 flex-1 whitespace-nowrap text-left">{label}</span>

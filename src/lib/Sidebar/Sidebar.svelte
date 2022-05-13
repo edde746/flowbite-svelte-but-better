@@ -1,9 +1,13 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { setContext } from 'svelte';
+  import { writable } from 'svelte/store';
 
   export let collapsed: boolean = false;
-  $: setContext('collapsed', collapsed);
+
+  const collapsedState = writable(collapsed);
+  $: collapsedState.set(collapsed);
+  setContext('collapsed', collapsedState);
 </script>
 
 <aside aria-label="Sidebar" {...$$props} class={classNames('h-full', collapsed ? 'w-16' : 'w-64')}>
