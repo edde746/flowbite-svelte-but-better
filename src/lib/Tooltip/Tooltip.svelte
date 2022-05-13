@@ -12,6 +12,7 @@
     type ComputePositionReturn,
   } from '@floating-ui/dom';
   import type { Placement } from '@floating-ui/dom';
+  import { onDestroy } from 'svelte';
 
   export let placement: 'auto' | Placement = 'top';
   export let trigger: 'hover' | 'click' = 'hover';
@@ -54,22 +55,36 @@
 
   let placementData: ComputePositionReturn;
   let tooltipRef: HTMLElement, triggerRef: HTMLElement, arrowRef: HTMLElement;
-  $: browser &&
-    tooltipRef &&
-    open &&
-    computePosition(triggerRef, tooltipRef, {
+
+  const updatePosition = () =>
+    computePosition(triggerRef as Element, tooltipRef as Element, {
       middleware: floatingMiddleware({ arrowRef, placement }),
       placement: floatingPlacement({ placement }),
     }).then((data) => (placementData = data));
+
+  let attachedScroll: boolean = false;
+  $: browser && tooltipRef && open && updatePosition();
+  $: {
+    if (browser && open && !attachedScroll) {
+      attachedScroll = true;
+      window.addEventListener('scroll', updatePosition, true);
+    } else if (!open && attachedScroll) {
+      attachedScroll = false;
+      window.removeEventListener('scroll', updatePosition, true);
+    }
+  }
+
+  onDestroy(() => {
+    if (attachedScroll) {
+      attachedScroll = false;
+      window.removeEventListener('scroll', updatePosition, true);
+    }
+  });
 </script>
 
-<div
-  use:clickOutside={() => {
-    if (open) {
-      open = false;
-    }
-  }}
->
+<svelte:window on:resize={() => open && updatePosition()} />
+
+<div>
   <div
     class="w-fit"
     bind:this={triggerRef}
@@ -86,6 +101,11 @@
     on:click={() => {
       if (trigger === 'click') {
         open = !open;
+      }
+    }}
+    use:clickOutside={() => {
+      if (open) {
+        open = false;
       }
     }}
   >
