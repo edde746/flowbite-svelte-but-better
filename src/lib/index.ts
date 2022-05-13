@@ -1,6 +1,15 @@
 /* ListGroup */
 export { default as ListGroupItem } from './ListGroup/ListGroupItem.svelte';
 export { default as ListGroup } from './ListGroup/ListGroup.svelte';
+/* Sidebar */
+export { default as SidebarItemGroup } from './Sidebar/SidebarItemGroup.svelte';
+export { default as SidebarItems } from './Sidebar/SidebarItems.svelte';
+export { default as SidebarItem } from './Sidebar/SidebarItem.svelte';
+export { default as SidebarLogo } from './Sidebar/SidebarLogo.svelte';
+export { default as SidebarCollapse } from './Sidebar/SidebarCollapse.svelte';
+export { default as SidebarCTA } from './Sidebar/SidebarCTA.svelte';
+export { default as Sidebar } from './Sidebar/Sidebar.svelte';
+export { default as SidebarItemWrapper } from './Sidebar/SidebarItemWrapper.svelte';
 /* Dropdown */
 export { default as DropdownDivider } from './Dropdown/DropdownDivider.svelte';
 export { default as DropdownHeader } from './Dropdown/DropdownHeader.svelte';
