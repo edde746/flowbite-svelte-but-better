@@ -34,6 +34,8 @@ export { default as Radio } from './Form/Radio.svelte';
 export { default as Tooltip } from './Tooltip/Tooltip.svelte';
 /* Card */
 export { default as Card } from './Card/Card.svelte';
+/* Progress */
+export { default as Progress } from './Progress/Progress.svelte';
 /* Alert */
 export { default as Alert } from './Alert/Alert.svelte';
 /* Button */
