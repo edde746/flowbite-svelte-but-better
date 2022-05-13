@@ -65,30 +65,30 @@
   } from '$lib';
 
   import {
-    InformationCircleSolid,
-    EyeSolid,
-    CheckSolid,
-    ClockSolid,
-    HomeSolid,
-    ShoppingCartSolid,
-    ArrowRightOutline,
-    XSolid,
-    ExclamationOutline,
-    ChartPieSolid,
-    ViewBoardsSolid,
-    InboxInSolid,
-    UserSolid,
-    ArrowSmRightSolid,
-    TableSolid,
-    InboxSolid,
-    ShoppingBagOutline,
-    CheckOutline,
-    XOutline,
-    PlayOutline,
-    PaperAirplaneOutline,
-    LockOpenSolid,
-    LockOpenOutline,
-  } from 'svelte-heros';
+    HiInformationCircleSolid,
+    HiEyeSolid,
+    HiCheckSolid,
+    HiClockSolid,
+    HiHomeSolid,
+    HiShoppingCartSolid,
+    HiArrowRightOutline,
+    HiXSolid,
+    HiExclamationOutline,
+    HiChartPieSolid,
+    HiViewBoardsSolid,
+    HiInboxInSolid,
+    HiUserSolid,
+    HiArrowSmRightSolid,
+    HiTableSolid,
+    HiInboxSolid,
+    HiShoppingBagOutline,
+    HiCheckOutline,
+    HiXOutline,
+    HiPlayOutline,
+    HiPaperAirplaneOutline,
+    HiLockOpenSolid,
+    HiLockOpenOutline,
+  } from 'svelte-icons/hi';
 
   const onClick = (g) => {
     alert(g.detail);
@@ -109,7 +109,7 @@
     </span>
   </Alert>
 
-  <Alert color="green" rounded={false} withBorderAccent={true} onDismiss={() => {}} icon={InformationCircleSolid}>
+  <Alert color="green" rounded={false} withBorderAccent={true} onDismiss={() => {}} icon={HiInformationCircleSolid}>
     <h3 class="text-lg font-medium text-green-700 dark:text-green-800">This is a info alert</h3>
     <div slot="extra">
       <div class="mt-2 mb-4 text-sm text-green-700 dark:text-green-800">
@@ -121,7 +121,7 @@
           type="button"
           class="mr-2 inline-flex items-center rounded-lg bg-green-700 px-3 py-1.5 text-center text-xs font-medium text-white hover:bg-green-800 focus:ring-4 focus:ring-green-300 dark:bg-green-800 dark:hover:bg-green-900"
         >
-          <EyeSolid class="-ml-0.5 mr-2 h-4 w-4" />View more
+          <HiEyeSolid class="-ml-0.5 mr-2 h-4 w-4" />View more
         </button>
         <button
           type="button"
@@ -187,13 +187,13 @@
   </div>
 
   <div class="flex flex-wrap gap-2">
-    <Badge icon={CheckSolid}>2 minutes ago</Badge>
-    <Badge color="gray" icon={ClockSolid}>3 days ago</Badge>
+    <Badge icon={HiCheckSolid}>2 minutes ago</Badge>
+    <Badge color="gray" icon={HiClockSolid}>3 days ago</Badge>
   </div>
 
   <div>
     <Breadcrumb aria-label="Default breadcrumb example">
-      <BreadcrumbItem href="#" icon={HomeSolid}>Home</BreadcrumbItem>
+      <BreadcrumbItem href="#" icon={HiHomeSolid}>Home</BreadcrumbItem>
       <BreadcrumbItem href="#">Projects</BreadcrumbItem>
       <BreadcrumbItem>Flowbite Svelte</BreadcrumbItem>
     </Breadcrumb>
@@ -252,22 +252,22 @@
 
   <div class="flex flex-wrap items-center gap-2">
     <Button>
-      <ShoppingCartSolid class="mr-2 h-5 w-5" />
+      <HiShoppingCartSolid class="mr-2 h-5 w-5" />
       Buy now
     </Button>
     <Button>
       Choose plan
-      <ArrowRightOutline class="ml-2 h-5 w-5" />
+      <HiArrowRightOutline class="ml-2 h-5 w-5" />
     </Button>
   </div>
 
   <Button label="2">Messages</Button>
 
   <div class="flex flex-wrap items-center gap-2">
-    <Button icon={ArrowRightOutline} />
-    <Button icon={ArrowRightOutline} pill={true} />
-    <Button icon={ArrowRightOutline} outline={true} />
-    <Button icon={ArrowRightOutline} pill={true} outline={true} />
+    <Button icon={HiArrowRightOutline} />
+    <Button icon={HiArrowRightOutline} pill={true} />
+    <Button icon={HiArrowRightOutline} outline={true} />
+    <Button icon={HiArrowRightOutline} pill={true} outline={true} />
     <Button disabled={true}>Disabled button</Button>
   </div>
 
@@ -403,11 +403,11 @@
     <div class="w-full sm:flex sm:items-center sm:justify-between">
       <FooterCopyright href="#" by="Flowbite™" year={2022} />
       <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-        <FooterIcon href="#" class="text-gray-400 hover:text-gray-900" icon={CheckSolid} />
-        <FooterIcon href="#" class="text-gray-400 hover:text-gray-900" icon={CheckSolid} />
-        <FooterIcon href="#" class="text-gray-400 hover:text-gray-900" icon={CheckSolid} />
-        <FooterIcon href="#" class="text-gray-400 hover:text-gray-900" icon={CheckSolid} />
-        <FooterIcon href="#" class="text-gray-400 hover:text-gray-900" icon={CheckSolid} />
+        <FooterIcon href="#" class="text-gray-400 hover:text-gray-900" icon={HiCheckSolid} />
+        <FooterIcon href="#" class="text-gray-400 hover:text-gray-900" icon={HiCheckSolid} />
+        <FooterIcon href="#" class="text-gray-400 hover:text-gray-900" icon={HiCheckSolid} />
+        <FooterIcon href="#" class="text-gray-400 hover:text-gray-900" icon={HiCheckSolid} />
+        <FooterIcon href="#" class="text-gray-400 hover:text-gray-900" icon={HiCheckSolid} />
       </div>
     </div>
   </Footer>
@@ -525,10 +525,10 @@
 
   <div>
     <ListGroup class="w-48">
-      <ListGroupItem active={true} icon={HomeSolid}>Profile</ListGroupItem>
-      <ListGroupItem icon={CheckSolid}>Settings</ListGroupItem>
-      <ListGroupItem icon={XSolid}>Messages</ListGroupItem>
-      <ListGroupItem icon={InformationCircleSolid}>Download</ListGroupItem>
+      <ListGroupItem active={true} icon={HiHomeSolid}>Profile</ListGroupItem>
+      <ListGroupItem icon={HiCheckSolid}>Settings</ListGroupItem>
+      <ListGroupItem icon={HiXSolid}>Messages</ListGroupItem>
+      <ListGroupItem icon={HiInformationCircleSolid}>Download</ListGroupItem>
     </ListGroup>
   </div>
 
@@ -559,7 +559,7 @@
     <Modal bind:open={modalOpen2} size="md" popup={true}>
       <ModalHeader />
       <ModalBody class="text-center">
-        <ExclamationOutline class="mx-auto mb-4 h-14 w-14 text-gray-400 dark:text-gray-200" />
+        <HiExclamationOutline class="mx-auto mb-4 h-14 w-14 text-gray-400 dark:text-gray-200" />
         <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
           Are you sure you want to delete this product?
         </h3>
@@ -670,13 +670,13 @@
     <Sidebar class="!bg-gray-50" collapsed={collapse}>
       <SidebarItems>
         <SidebarItemGroup>
-          <SidebarItem href="#" icon={ChartPieSolid}>Dashboard</SidebarItem>
-          <SidebarItem href="#" icon={ViewBoardsSolid} label="Pro" labelColor="gray">Kanban</SidebarItem>
-          <SidebarItem href="#" icon={InboxInSolid} label="3">Inbox</SidebarItem>
-          <SidebarItem href="#" icon={UserSolid}>Users</SidebarItem>
-          <SidebarItem href="#" icon={ShoppingCartSolid}>Products</SidebarItem>
-          <SidebarItem href="#" icon={ArrowSmRightSolid}>Sign In</SidebarItem>
-          <SidebarItem href="#" icon={TableSolid}>Sign Up</SidebarItem>
+          <SidebarItem href="#" icon={HiChartPieSolid}>Dashboard</SidebarItem>
+          <SidebarItem href="#" icon={HiViewBoardsSolid} label="Pro" labelColor="gray">Kanban</SidebarItem>
+          <SidebarItem href="#" icon={HiInboxInSolid} label="3">Inbox</SidebarItem>
+          <SidebarItem href="#" icon={HiUserSolid}>Users</SidebarItem>
+          <SidebarItem href="#" icon={HiShoppingCartSolid}>Products</SidebarItem>
+          <SidebarItem href="#" icon={HiArrowSmRightSolid}>Sign In</SidebarItem>
+          <SidebarItem href="#" icon={HiTableSolid}>Sign Up</SidebarItem>
         </SidebarItemGroup>
       </SidebarItems>
     </Sidebar>
@@ -686,15 +686,15 @@
     <Sidebar class="!bg-gray-50" collapsed={false}>
       <SidebarItems>
         <SidebarItemGroup>
-          <SidebarItem href="#" icon={ChartPieSolid}>Dashboard</SidebarItem>
-          <SidebarCollapse icon={UserSolid} label="E-commerce">
+          <SidebarItem href="#" icon={HiChartPieSolid}>Dashboard</SidebarItem>
+          <SidebarCollapse icon={HiUserSolid} label="E-commerce">
             <SidebarItem href="#">Products</SidebarItem>
           </SidebarCollapse>
-          <SidebarItem href="#" icon={InboxSolid}>Inbox</SidebarItem>
-          <SidebarItem href="#" icon={UserSolid}>Users</SidebarItem>
-          <SidebarItem href="#" icon={TableSolid}>Products</SidebarItem>
-          <SidebarItem href="#" icon={ArrowSmRightSolid}>Sign In</SidebarItem>
-          <SidebarItem href="#" icon={TableSolid}>Sign Up</SidebarItem>
+          <SidebarItem href="#" icon={HiInboxSolid}>Inbox</SidebarItem>
+          <SidebarItem href="#" icon={HiUserSolid}>Users</SidebarItem>
+          <SidebarItem href="#" icon={HiTableSolid}>Products</SidebarItem>
+          <SidebarItem href="#" icon={HiArrowSmRightSolid}>Sign In</SidebarItem>
+          <SidebarItem href="#" icon={HiTableSolid}>Sign Up</SidebarItem>
         </SidebarItemGroup>
       </SidebarItems>
     </Sidebar>
@@ -704,18 +704,18 @@
     <Sidebar class="!bg-gray-50" collapsed={false}>
       <SidebarItems>
         <SidebarItemGroup>
-          <SidebarItem href="#" icon={ChartPieSolid}>Dashboard</SidebarItem>
-          <SidebarItem href="#" icon={ViewBoardsSolid}>Kanban</SidebarItem>
-          <SidebarItem href="#" icon={InboxSolid}>Inbox</SidebarItem>
-          <SidebarItem href="#" icon={UserSolid}>Users</SidebarItem>
-          <SidebarItem href="#" icon={TableSolid}>Products</SidebarItem>
-          <SidebarItem href="#" icon={ArrowSmRightSolid}>Sign In</SidebarItem>
-          <SidebarItem href="#" icon={TableSolid}>Sign Up</SidebarItem>
+          <SidebarItem href="#" icon={HiChartPieSolid}>Dashboard</SidebarItem>
+          <SidebarItem href="#" icon={HiViewBoardsSolid}>Kanban</SidebarItem>
+          <SidebarItem href="#" icon={HiInboxSolid}>Inbox</SidebarItem>
+          <SidebarItem href="#" icon={HiUserSolid}>Users</SidebarItem>
+          <SidebarItem href="#" icon={HiTableSolid}>Products</SidebarItem>
+          <SidebarItem href="#" icon={HiArrowSmRightSolid}>Sign In</SidebarItem>
+          <SidebarItem href="#" icon={HiTableSolid}>Sign Up</SidebarItem>
         </SidebarItemGroup>
         <SidebarItemGroup>
-          <SidebarItem href="#" icon={ChartPieSolid}>Upgrade to Pro</SidebarItem>
-          <SidebarItem href="#" icon={ViewBoardsSolid}>Documentation</SidebarItem>
-          <SidebarItem href="#" icon={UserSolid}>Help</SidebarItem>
+          <SidebarItem href="#" icon={HiChartPieSolid}>Upgrade to Pro</SidebarItem>
+          <SidebarItem href="#" icon={HiViewBoardsSolid}>Documentation</SidebarItem>
+          <SidebarItem href="#" icon={HiUserSolid}>Help</SidebarItem>
         </SidebarItemGroup>
       </SidebarItems>
     </Sidebar>
@@ -725,13 +725,13 @@
     <Sidebar class="!bg-gray-50" collapsed={false}>
       <SidebarItems>
         <SidebarItemGroup>
-          <SidebarItem href="#" icon={ChartPieSolid}>Dashboard</SidebarItem>
-          <SidebarItem href="#" icon={ViewBoardsSolid}>Kanban</SidebarItem>
-          <SidebarItem href="#" icon={InboxSolid}>Inbox</SidebarItem>
-          <SidebarItem href="#" icon={UserSolid}>Users</SidebarItem>
-          <SidebarItem href="#" icon={ShoppingBagOutline}>Products</SidebarItem>
-          <SidebarItem href="#" icon={ArrowSmRightSolid}>Sign In</SidebarItem>
-          <SidebarItem href="#" icon={TableSolid}>Sign Up</SidebarItem>
+          <SidebarItem href="#" icon={HiChartPieSolid}>Dashboard</SidebarItem>
+          <SidebarItem href="#" icon={HiViewBoardsSolid}>Kanban</SidebarItem>
+          <SidebarItem href="#" icon={HiInboxSolid}>Inbox</SidebarItem>
+          <SidebarItem href="#" icon={HiUserSolid}>Users</SidebarItem>
+          <SidebarItem href="#" icon={HiShoppingBagOutline}>Products</SidebarItem>
+          <SidebarItem href="#" icon={HiArrowSmRightSolid}>Sign In</SidebarItem>
+          <SidebarItem href="#" icon={HiTableSolid}>Sign Up</SidebarItem>
         </SidebarItemGroup>
       </SidebarItems>
       <SidebarCTA>
@@ -933,7 +933,7 @@
         <div
           class="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-green-100 text-green-500 dark:bg-green-800 dark:text-green-200"
         >
-          <CheckOutline class="h-5 w-5" />
+          <HiCheckOutline class="h-5 w-5" />
         </div>
         <div class="ml-3 text-sm font-normal">Item moved successfully.</div>
         <ToastToggle />
@@ -942,7 +942,7 @@
         <div
           class="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-red-100 text-red-500 dark:bg-red-800 dark:text-red-200"
         >
-          <XOutline class="h-5 w-5" />
+          <HiXOutline class="h-5 w-5" />
         </div>
         <div class="ml-3 text-sm font-normal">Item has been deleted.</div>
         <ToastToggle />
@@ -951,7 +951,7 @@
         <div
           class="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-orange-100 text-orange-500 dark:bg-orange-700 dark:text-orange-200"
         >
-          <ExclamationOutline class="h-5 w-5" />
+          <HiExclamationOutline class="h-5 w-5" />
         </div>
         <div class="ml-3 text-sm font-normal">Improve password difficulty.</div>
         <ToastToggle />
@@ -961,7 +961,7 @@
 
   <div class="space-y-4">
     <Toast class="space-x-4 divide-x divide-gray-200 dark:divide-gray-700">
-      <PaperAirplaneOutline class="h-5 w-5 text-blue-600 dark:text-blue-500" />
+      <HiPaperAirplaneOutline class="h-5 w-5 text-blue-600 dark:text-blue-500" />
       <div class="pl-4 text-sm font-normal">Message sent successfully.</div>
     </Toast>
 
@@ -984,7 +984,7 @@
       <div
         class="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-blue-100 text-blue-500 dark:bg-blue-900 dark:text-blue-300"
       >
-        <LockOpenOutline class="h-5 w-5" />
+        <HiLockOpenOutline class="h-5 w-5" />
       </div>
       <div class="ml-3 text-sm font-normal">
         <span class="mb-1 text-sm font-semibold text-gray-900 dark:text-white"> Update available </span>

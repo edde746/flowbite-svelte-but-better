@@ -8,6 +8,7 @@
   export let helperText: string = '';
   export let icon: typeof SvelteComponent | null = null;
   export let color: 'base' | 'green' | 'red' = 'base';
+  export let addon: string = '';
 
   const colorClasses = {
     base: {
@@ -29,11 +30,13 @@
 </script>
 
 <div class="flex">
-  {#if $$slots.addon}
+  {#if $$slots.addon || addon}
     <span
       class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-200 px-3 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-600 dark:text-gray-400"
     >
-      <slot name="addon" />
+      <slot name="addon">
+        {addon}
+      </slot>
     </span>
   {/if}
   <div class="relative w-full">
@@ -50,8 +53,8 @@
         colorClasses[color].input,
         {
           'pl-10': icon !== null,
-          'rounded-lg': !$$slots.addon,
-          'rounded-r-lg': $$slots.addon,
+          'rounded-lg': !($$slots.addon || addon),
+          'rounded-r-lg': $$slots.addon || addon,
           'shadow-sm dark:shadow-sm-light': shadow,
           'p-2 sm:text-xs': sizing === 'sm',
           'p-2.5 text-sm': sizing === 'md',
@@ -63,8 +66,10 @@
   </div>
 </div>
 
-<div class={classNames('mt-1 text-sm', colorClasses[color].helperText)}>
-  <slot name="helper">
-    {helperText}
-  </slot>
-</div>
+{#if helperText || $$slots.helper}
+  <div class={classNames('mt-1 text-sm', colorClasses[color].helperText)}>
+    <slot name="helper">
+      {helperText}
+    </slot>
+  </div>
+{/if}
