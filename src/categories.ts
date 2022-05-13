@@ -116,7 +116,7 @@ export default [
   {
     title: 'Footer',
     icon: HiMinusSolid,
-    group: false,
+    href: '/footer',
     card: {
       className: 'w-40',
       images: { light: 'footer-light.svg', dark: 'footer-dark.svg' },
