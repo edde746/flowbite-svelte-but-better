@@ -87,30 +87,12 @@ export default [
     },
   },
   {
-    title: 'Button group',
-    icon: HiDuplicateSolid,
-    href: '/button-group',
-    card: {
-      className: 'w-56',
-      images: { light: 'button-group-light.svg', dark: 'button-group-dark.svg' },
-    },
-  },
-  {
     title: 'Card',
     icon: HiCreditCardSolid,
     href: '/card',
     card: {
       className: 'w-36',
       images: { light: 'card-light.svg', dark: 'card-dark.svg' },
-    },
-  },
-  {
-    title: 'Carousel',
-    icon: HiPhotographSolid,
-    href: '/carousel',
-    card: {
-      className: 'w-48',
-      images: { light: 'carousel-light.svg', dark: 'carousel-dark.svg' },
     },
   },
   {
