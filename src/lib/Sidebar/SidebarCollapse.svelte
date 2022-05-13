@@ -1,12 +1,12 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { getContext, setContext, type SvelteComponent } from 'svelte';
-  import { ChevronDownOutline, MenuOutline } from 'svelte-heros';
+  import { HiChevronDownOutline, HiMenuOutline } from 'svelte-icons/hi';
   import type { Writable } from 'svelte/store';
   import SidebarItemWrapper from './SidebarItemWrapper.svelte';
 
   export let open: boolean = false;
-  export let icon: typeof SvelteComponent | null = MenuOutline;
+  export let icon: typeof SvelteComponent | null = HiMenuOutline;
   export let label: string = '';
 
   setContext('insideCollapse', true);
@@ -37,7 +37,7 @@
       <span class="sr-only">{label}</span>
     {:else}
       <span class="ml-3 flex-1 whitespace-nowrap text-left">{label}</span>
-      <ChevronDownOutline class="h-5 w-5" />
+      <HiChevronDownOutline class="h-5 w-5" />
     {/if}
   </button>
   <ul

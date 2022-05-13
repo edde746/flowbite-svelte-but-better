@@ -1,7 +1,7 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { getContext } from 'svelte';
-  import { XOutline } from 'svelte-heros';
+  import { HiXOutline } from 'svelte-icons/hi';
   import { get, type Writable } from 'svelte/store';
 
   const state = getContext<
@@ -31,5 +31,5 @@
   }}
 >
   <span class="sr-only">Close</span>
-  <XOutline class="h-5 w-5 shrink-0" />
+  <HiXOutline class="h-5 w-5 shrink-0" />
 </button>

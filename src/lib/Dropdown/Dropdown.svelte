@@ -2,7 +2,12 @@
   import Tooltip from '$lib/Tooltip/Tooltip.svelte';
   import Button from '$lib/Button/Button.svelte';
   import classNames from 'classnames';
-  import { ChevronUpOutline, ChevronRightOutline, ChevronDownOutline, ChevronLeftOutline } from 'svelte-heros';
+  import {
+    HiChevronUpOutline,
+    HiChevronRightOutline,
+    HiChevronDownOutline,
+    HiChevronLeftOutline,
+  } from 'svelte-icons/hi';
   import type { Placement } from '@floating-ui/dom';
 
   export let label: string = '';
@@ -13,10 +18,10 @@
   $: placement = inline ? 'bottom-start' : 'bottom';
 
   const icons = {
-    top: ChevronUpOutline,
-    right: ChevronRightOutline,
-    bottom: ChevronDownOutline,
-    left: ChevronLeftOutline,
+    top: HiChevronUpOutline,
+    right: HiChevronRightOutline,
+    bottom: HiChevronDownOutline,
+    left: HiChevronLeftOutline,
   };
 
   // @ts-ignore

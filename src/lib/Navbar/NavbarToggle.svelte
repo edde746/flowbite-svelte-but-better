@@ -1,6 +1,6 @@
 <script lang="ts">
   import classNames from 'classnames';
-  import { MenuOutline } from 'svelte-heros';
+  import { HiMenuOutline } from 'svelte-icons/hi';
 
   export let open: boolean = false;
 </script>
@@ -13,5 +13,5 @@
   on:click={() => (open = !open)}
 >
   <span class="sr-only">Open main menu</span>
-  <MenuOutline class="h-6 w-6 shrink-0" />
+  <HiMenuOutline class="h-6 w-6 shrink-0" />
 </button>

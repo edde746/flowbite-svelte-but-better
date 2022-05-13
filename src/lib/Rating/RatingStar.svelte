@@ -1,10 +1,10 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { getContext, SvelteComponent } from 'svelte';
-  import { StarSolid } from 'svelte-heros';
+  import { HiStarSolid } from 'svelte-icons/hi';
 
   export let filled: boolean = true;
-  export let starIcon: typeof SvelteComponent = StarSolid;
+  export let starIcon: typeof SvelteComponent = HiStarSolid;
 
   const sizeClasses = {
     sm: 'w-5 h-5',

@@ -1,6 +1,6 @@
 <script lang="ts">
   import classNames from 'classnames';
-  import { ChevronLeftOutline, ChevronRightOutline } from 'svelte-heros';
+  import { HiChevronLeftOutline, HiChevronRightOutline } from 'svelte-icons/hi';
 
   export let currentPage: number;
   export let layout: 'navigation' | 'pagination' | 'table' = 'pagination';
@@ -33,7 +33,7 @@
         on:click={() => currentPage--}
       >
         {#if showIcons}
-          <ChevronLeftOutline aria-hidden="true" class="h-5 w-5" />
+          <HiChevronLeftOutline aria-hidden="true" class="h-5 w-5" />
         {/if}
         Previous
       </button>
@@ -64,7 +64,7 @@
       >
         Next
         {#if showIcons}
-          <ChevronRightOutline aria-hidden="true" class="h-5 w-5" />
+          <HiChevronRightOutline aria-hidden="true" class="h-5 w-5" />
         {/if}
       </button>
     </li>

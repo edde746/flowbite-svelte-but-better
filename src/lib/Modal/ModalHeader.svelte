@@ -1,7 +1,7 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { getContext } from 'svelte';
-  import { XOutline } from 'svelte-heros';
+  import { HiXOutline } from 'svelte-icons/hi';
 
   const context = getContext<{ popup: boolean; onClose: () => void }>('modal');
 </script>
@@ -20,6 +20,6 @@
     type="button"
     on:click={() => context.onClose()}
   >
-    <XOutline className="h-5 w-5" />
+    <HiXOutline className="h-5 w-5" />
   </button>
 </div>

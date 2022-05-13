@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { SvelteComponent } from 'svelte';
   import classNames from 'classnames';
-  import { XOutline } from 'svelte-heros';
+  import { HiXOutline } from 'svelte-icons/hi';
 
   export let color: 'blue' | 'red' | 'green' | 'yellow' | 'gray' = 'blue';
   export let icon: typeof SvelteComponent | null = null;
@@ -51,7 +51,7 @@
         type="button"
       >
         <span class="sr-only">Close</span>
-        <XOutline class="h-5 w-5" />
+        <HiXOutline class="h-5 w-5" />
       </button>
     {/if}
   </div>

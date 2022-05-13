@@ -1,7 +1,7 @@
 <script lang="ts">
   import classNames from 'classnames';
   import { getContext } from 'svelte';
-  import { ChevronDownOutline } from 'svelte-heros';
+  import { HiChevronDownOutline } from 'svelte-icons/hi';
 
   export let open: boolean = false;
 
@@ -25,7 +25,7 @@
   <h2>
     <slot name="title" />
   </h2>
-  <ChevronDownOutline className={classNames('h-6 w-6 shrink-0', { 'rotate-180': open })} />
+  <HiChevronDownOutline className={classNames('h-6 w-6 shrink-0', { 'rotate-180': open })} />
 </button>
 
 {#if open}
