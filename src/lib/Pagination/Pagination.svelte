@@ -13,6 +13,7 @@
 
   $: firstPage = Math.max(1, currentPage - 3);
   $: lastPage = Math.min(currentPage + 3, totalPages);
+  $: currentPage = Math.min(Math.max(1, currentPage), totalPages);
 </script>
 
 <nav {...$$props}>
