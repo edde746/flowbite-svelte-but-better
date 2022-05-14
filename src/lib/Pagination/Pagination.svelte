@@ -13,7 +13,10 @@
 
   $: firstPage = Math.max(1, currentPage - 3);
   $: lastPage = Math.min(currentPage + 3, totalPages);
-  $: currentPage = Math.min(Math.max(1, currentPage), totalPages);
+
+  const updatePage = (newPage: number): void => {
+    currentPage = Math.min(Math.max(1, newPage), totalPages);
+  };
 </script>
 
 <nav {...$$props}>
@@ -38,7 +41,7 @@
           'ml-0 rounded-l-lg border border-gray-300 bg-white py-2 px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white',
           showIcons ? 'inline-flex' : ''
         )}
-        on:click={() => currentPage--}
+        on:click={() => updatePage(currentPage - 1)}
       >
         {#if showIcons}
           <HiChevronLeftOutline aria-hidden="true" class="h-5 w-5" />
@@ -68,7 +71,7 @@
           'rounded-r-lg border border-gray-300 bg-white py-2 px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white',
           showIcons ? 'inline-flex' : ''
         )}
-        on:click={() => currentPage++}
+        on:click={() => updatePage(currentPage + 1)}
       >
         Next
         {#if showIcons}
