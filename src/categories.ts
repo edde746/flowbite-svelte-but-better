@@ -23,8 +23,9 @@ import {
   HiStarSolid,
   HiTableSolid,
   HiUserSolid,
-  // @ts-ignore
 } from 'svelte-icons/hi';
+
+import { FaSpinner } from 'svelte-icons/fa';
 
 export default [
   {
@@ -187,7 +188,7 @@ export default [
   },
   {
     title: 'Spinners',
-    icon: HiQuestionMarkCircleSolid,
+    icon: FaSpinner,
     href: '/spinners',
     card: {
       className: 'w-36',
