@@ -11,6 +11,7 @@
 
 <svelte:head>
   {@html highlightStyle}
+  <title>Flowbite Svelte Components</title>
 </svelte:head>
 
 <div class="flex h-screen w-full flex-col overflow-hidden">
