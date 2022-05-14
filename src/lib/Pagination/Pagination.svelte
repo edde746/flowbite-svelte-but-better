@@ -24,7 +24,14 @@
       <span class="font-semibold text-gray-900 dark:text-white">{totalPages}</span> Entries
     </div>
   {/if}
-  <ul class="xs:mt-0 mt-2 inline-flex items-center -space-x-px">
+  <ul
+    class={classNames(
+      {
+        'xs:mt-0 mt-2': layout === 'table',
+      },
+      'inline-flex items-center -space-x-px'
+    )}
+  >
     <li>
       <button
         class={classNames(
