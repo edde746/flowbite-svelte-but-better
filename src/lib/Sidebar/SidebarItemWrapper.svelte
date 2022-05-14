@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Tooltip } from '$lib';
+  import Tooltip from '../Tooltip/Tooltip.svelte';
   import { getContext } from 'svelte';
   import type { Writable } from 'svelte/store';
 

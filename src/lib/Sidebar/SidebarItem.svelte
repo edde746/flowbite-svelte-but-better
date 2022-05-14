@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Badge } from '$lib';
+  import Badge from '../Badge/Badge.svelte';
 
   import classNames from 'classnames';
   import { getContext, type SvelteComponent } from 'svelte';
