@@ -37,8 +37,11 @@
     $$props.class
   )}
 />
-<div class={classNames('mt-1 text-sm', colorClasses[color].helperText)}>
-  <slot name="helper">
-    {helperText}
-  </slot>
-</div>
+
+{#if helperText || $$slots.helper}
+  <div class={classNames('mt-1 text-sm', colorClasses[color].helperText)}>
+    <slot name="helper">
+      {helperText}
+    </slot>
+  </div>
+{/if}
