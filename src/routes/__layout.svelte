@@ -4,6 +4,7 @@
   import { HiMenuAlt1Outline } from 'svelte-icons/hi';
   import categories from '../categories';
   import highlightStyle from 'svelte-highlight/styles/github-dark-dimmed';
+  import { FaGithub } from 'svelte-icons/fa';
 
   let collapsed = false;
 </script>
@@ -23,13 +24,13 @@
     <div class="flex items-center gap-2">
       <a
         class="cursor-pointer rounded-lg p-2.5 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-        href="https://github.com/themesberg/flowbite-react"
+        href="https://github.com/edde746/flowbite-svelte-but-better"
         title="Github Repository"
         target="_blank"
         rel="noreferrer"
       >
         <!-- <BsGithub class="h-5 w-5" /> -->
-        <img src="/github.svg" alt="GitHub" class="h-5 w-5 dark:invert" />
+        <FaGithub class="h-5 w-5 text-black dark:text-white" />
       </a>
     </div>
   </Navbar>
