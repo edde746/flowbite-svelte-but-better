@@ -2,7 +2,7 @@
   import classNames from 'classnames';
   import type { SvelteComponent } from 'svelte';
 
-  export let value: any;
+  export let value: any = '';
   export let sizing: 'sm' | 'md' | 'lg' = 'md';
   export let shadow: boolean = false;
   export let helperText: string = '';
