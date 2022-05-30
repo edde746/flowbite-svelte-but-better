@@ -8,6 +8,7 @@ import {
   HiChevronDoubleDownOutline,
   HiChevronDoubleRightSolid,
   HiClipboardListSolid,
+  HiClockSolid,
   HiCollectionSolid,
   HiCreditCardSolid,
   HiDeviceTabletOutline,
@@ -202,6 +203,15 @@ export default [
     card: {
       className: 'w-36',
       images: { light: 'tables-light.svg', dark: 'tables-dark.svg' },
+    },
+  },
+  {
+    title: 'Timeline',
+    icon: HiClockSolid,
+    href: '/timeline',
+    card: {
+      className: 'w-36',
+      images: { light: 'timeline-light.svg', dark: 'timeline-dark.svg' },
     },
   },
   {

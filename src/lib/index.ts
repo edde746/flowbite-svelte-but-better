@@ -80,5 +80,13 @@ export { default as Modal } from './Modal/Modal.svelte';
 export { default as ModalFooter } from './Modal/ModalFooter.svelte';
 export { default as ModalBody } from './Modal/ModalBody.svelte';
 export { default as ModalHeader } from './Modal/ModalHeader.svelte';
+/* Timeline */
+export { default as TimelinePoint } from './Timeline/TimelinePoint.svelte';
+export { default as TimelineItem } from './Timeline/TimelineItem.svelte';
+export { default as TimelineTime } from './Timeline/TimelineTime.svelte';
+export { default as TimelineTitle } from './Timeline/TimelineTitle.svelte';
+export { default as Timeline } from './Timeline/Timeline.svelte';
+export { default as TimelineBody } from './Timeline/TimelineBody.svelte';
+export { default as TimelineContent } from './Timeline/TimelineContent.svelte';
 /* Badge */
 export { default as Badge } from './Badge/Badge.svelte';
