@@ -17,10 +17,3 @@ then use like this:
 
 <Button color="blue">Hello World</Button>
 ```
-
-## Missing Features
- - ButtonGroup
- - Carousel
- - DarkTheme Toggle
- - Tabs
- - Documentation
